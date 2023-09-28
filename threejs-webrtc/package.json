@@ -1,0 +1,22 @@
+{
+  "author": "",
+  "dependencies": {
+    "express": "^4.18.2",
+    "simple-peer": "^9.11.1",
+    "socket.io": "^4.7.2",
+    "three": "^0.156.1"
+  },
+  "description": "Template for using three.js with socket.io and WebRTC",
+  "devDependencies": {
+    "vite": "^4.4.9"
+  },
+  "license": "ISC",
+  "main": "server.js",
+  "name": "three.js-webrtc",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}

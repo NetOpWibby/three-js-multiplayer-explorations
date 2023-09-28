@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>My first three.js app</title>
+
+    <style>
+      *, *::before, *::after {
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+    <script src="https://unpkg.com/netplayjs@0.4.1/dist/netplay.js"></script>
+
+    <!-- "netplayjs": "https://unpkg.com/netplayjs@0.4.1/dist/netplay.js", -->
+
+    <script type="importmap">
+      {
+        "imports": {
+          "netplayjs": "https://unpkg.com/netplayjs@0.4.1/dist/netplay.js",
+          "three": "https://unpkg.com/three@0.156.1/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.156.1/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
